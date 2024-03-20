@@ -1,0 +1,447 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 80px;
+  position: absolute;
+  width: 100%;
+}
+nav .nav_container {
+  width: 25%;
+}
+nav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav_start_a {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav .nav_a {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  font-size: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav .nav_start_a:hover {
+  color: gray;
+}
+nav .nav_a:hover {
+  color: gray;
+}
+nav .btn_icon_nav {
+  display: none;
+}
+
+@media screen and (max-width: 915px) {
+  nav {
+    min-height: 60px;
+    background-color: white;
+  }
+  nav .nav_start_a {
+    color: black;
+  }
+  nav .nav_container {
+    display: none;
+  }
+  nav .btn_icon_nav {
+    display: flex;
+  }
+  nav .btn_nav {
+    padding: 10px;
+    color: gray;
+    background-color: white;
+    border: 1px solid gray;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+}
+.footer_div_1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+.footer_div_1 .footer_div_2 {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+.footer_div_1 .footer_div_2 .icon_div {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.footer_div_1 .footer_div_2 .icon_div a:hover {
+  color: #0085A1;
+}
+.footer_div_1 .footer_div_2 .icon_div a {
+  color: black;
+}
+.footer_div_1 .div_p {
+  font-size: 20px;
+  opacity: 0.5;
+}
+
+.footer_hr {
+  margin: 10px;
+}
+
+.about_section {
+  background-image: linear-gradient(to bottom, rgba(50, 47, 47, 0.52), rgba(74, 71, 71, 0.73)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/about-bg.jpg");
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_section .blog_div {
+  text-align: center;
+}
+.about_section .blog_div .blog_h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 1.6667rem + 6.6667vw, 5.625rem);
+  color: white;
+}
+.about_section .blog_div .blog_p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  color: white;
+}
+
+.about_section_2 {
+  width: 100%;
+  min-height: 300px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about_section_2 .section2_div {
+  width: 55%;
+  font-size: clamp(1.25rem, 1.0913rem + 0.7937vw, 1.5625rem);
+  color: rgb(86, 86, 86);
+}
+.about_section_2 .section2_div p {
+  margin: 30px;
+}
+
+hr {
+  opacity: 0.3;
+}
+
+@media screen and (max-width: 800px) {
+  .about_section {
+    min-height: 400px;
+  }
+  .about_section_2 .section2_div {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .about_section {
+    min-height: 400px;
+  }
+  .about_section_2 .section2_div {
+    width: 100%;
+  }
+}
+.home_section {
+  background-image: linear-gradient(to bottom, rgba(48, 48, 48, 0.52), rgba(49, 49, 49, 0.73)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/home-bg.jpg   ");
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home_section .blog_div {
+  text-align: center;
+}
+.home_section .blog_div .blog_h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 1.6667rem + 6.6667vw, 5.625rem);
+  color: white;
+}
+.home_section .blog_div .blog_p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  color: white;
+}
+
+.contact_section_2 {
+  width: 100%;
+  min-height: 880px;
+  margin-top: 60px;
+}
+.contact_section_2 .blog_div_2 {
+  width: 45%;
+  margin: auto;
+}
+.contact_section_2 .blog_div_2 h2 {
+  font-size: clamp(1.875rem, 1.6528rem + 1.1111vw, 2.3125rem);
+  font-weight: 780;
+  color: black;
+}
+.contact_section_2 .blog_div_2 h3 {
+  font-size: clamp(1.5625rem, 1.4038rem + 0.7937vw, 1.875rem);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  color: black;
+}
+.contact_section_2 .blog_div_2 p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 100;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contact_section_2 .blog_div_2 div {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+.contact_section_2 .blog_div_2 div button {
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  background-color: #0085A1;
+  color: aliceblue;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .contact_section_2 .blog_div_2 {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .home_section {
+    min-height: 400px;
+  }
+  .contact_section_2 .blog_div_2 {
+    width: 90%;
+  }
+}
+.contact_section {
+  background-image: linear-gradient(to bottom, rgba(50, 47, 47, 0.52), rgba(74, 71, 71, 0.73)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/contact-bg.jpg");
+  width: 100%;
+  min-height: 600px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_section .blog_div {
+  text-align: center;
+}
+.contact_section .blog_div .blog_h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 800;
+  font-size: clamp(3rem, 1.9841rem + 5.0794vw, 5rem);
+  color: white;
+}
+.contact_section .blog_div .blog_p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 25px;
+  color: white;
+  font-weight: 100;
+}
+
+.contact_section2 {
+  width: 100%;
+  min-height: 500px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_section2 .contact_div2 {
+  width: 45%;
+  font-size: 23px;
+  color: rgb(50, 49, 49);
+}
+.contact_section2 .contact_div2 form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.contact_section2 .contact_div2 form .form_input {
+  min-height: 80px;
+  border: none;
+  border-bottom: 1px solid rgb(140, 139, 139);
+  font-size: 20px;
+  opacity: 0.8;
+  font-style: italic;
+}
+.contact_section2 .contact_btn {
+  padding: 18px 30px 18px 30px;
+  color: white;
+  background-color: #0085a1;
+  opacity: 0.6;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  margin-top: 40px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact_section {
+    min-height: 400px;
+  }
+  .contact_section2 .contact_div2 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .contact_section2 .contact_div2 {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+}
+.samplepost_section {
+  background-image: linear-gradient(to bottom, rgba(50, 47, 47, 0.52), rgba(74, 71, 71, 0.73)), url("https://startbootstrap.github.io/startbootstrap-clean-blog/assets/img/post-bg.jpg");
+  width: 100%;
+  min-height: 710px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.samplepost_section .blog_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.samplepost_section .blog_div .blog_h1 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: clamp(1.875rem, 0.9226rem + 4.7619vw, 3.75rem);
+  font-weight: 900;
+  color: white;
+  width: 50%;
+}
+.samplepost_section .blog_div .blog_p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: clamp(1rem, 0.5556rem + 2.2222vw, 1.875rem);
+  color: white;
+  width: 50%;
+}
+.samplepost_section .blog_div .blog_p2 {
+  margin-top: 20px;
+  font-style: italic;
+  font-family: "Lora", serif;
+  font-size: clamp(0.9375rem, 0.7788rem + 0.7937vw, 1.25rem);
+  color: white;
+  width: 50%;
+}
+
+.samplepost_section2 {
+  width: 100%;
+  min-height: 1000px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.samplepost_section2 .samplepost_div2 {
+  width: 50%;
+  font-size: 23px;
+  color: rgb(50, 49, 49);
+}
+.samplepost_section2 .samplepost_div2 p {
+  margin: 30px;
+}
+.samplepost_section2 .samplepost_div2 p a {
+  text-decoration: underline;
+  color: rgb(50, 49, 49);
+}
+.samplepost_section2 .samplepost_div2 h2 {
+  margin: 30px;
+}
+.samplepost_section2 .samplepost_div2 div {
+  margin-left: 30px;
+}
+.samplepost_section2 .samplepost_div2 div img {
+  width: 90%;
+}
+.samplepost_section2 .samplepost_div2 .img_h4 {
+  font-size: 15px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+  font-weight: 100;
+}
+
+hr {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+  .samplepost_section {
+    min-height: 500px;
+  }
+  .samplepost_section .blog_div .blog_h1 {
+    width: 80%;
+  }
+  .samplepost_section .blog_div .blog_p {
+    width: 80%;
+  }
+  .samplepost_section .blog_div .blog_p2 {
+    width: 80%;
+  }
+  .samplepost_section2 .samplepost_div2 {
+    width: 80%;
+  }
+  hr {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .samplepost_section {
+    min-height: 500px;
+  }
+  .samplepost_section2 {
+    margin: 0;
+  }
+  .samplepost_section2 .samplepost_div2 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .samplepost_section2 .samplepost_div2 .img_h4 {
+    width: 80%;
+  }
+  hr {
+    margin: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
